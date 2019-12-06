@@ -1,7 +1,13 @@
 # Dadbot
-Discord bot that responds to "I'm [word]" with "Hi [word], I'm Dad!"
+discord bot that responds to "I'm [word]" with "Hi [word], I'm Dad!"
 
 # Setup
-Create a bot at http://discordapp.com/developers/applications/me
+create a bot at http://discordapp.com/developers/applications/me
+create a file auth.json. Insert value of token from new bot. 
+example file:
 
-Run Dadbot.js to start up Dadbot.
+{
+"token": ""
+}
+
+run Dadbot.js to start up Dadbot.

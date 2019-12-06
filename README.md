@@ -6,7 +6,7 @@ create a bot at http://discordapp.com/developers/applications/me
 
 create a file auth.json. Insert value of token from new bot. 
 
-example file:
+example file auth.json:
 
 {
 "token": ""

@@ -21,17 +21,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with 'im' or variants
     if (user != 'Dadbot') {
-	var regex = /(im|Im|IM|I\'m|I\'M|i\'m|I\’m|I\’M|i\’m) (\w+)/;
-    var match = regex.exec(message);
-    if (match && user != 'Dadbot') {
-		var name = match[2];
-		if (name != undefined) {
-			bot.sendMessage({
-				to: channelID,
-				message: 'Hi ' + name + ', I\'m Dad!'
-			});
+		var regex = /([Ii][’']?\s*[Mm]\s+)(\w+)/;
+		var match = regex.exec(message);
+		if (match) {
+			var name = match[2];
+			if (name != undefined) {
+				bot.sendMessage({
+					to: channelID,
+					message: 'Hi ' + name + ', I\'m Dad!'
+				});
+			}
+					// Just add any case commands if you want to..
 		}
-				// Just add any case commands if you want to..
-	}
 	}
 });
